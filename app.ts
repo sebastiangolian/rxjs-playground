@@ -1,9 +1,12 @@
-import { range } from 'rxjs';
-import { map, filter } from 'rxjs/operators';
+console.log('-------------------------------')
+console.log('----- RUN rxjs-playground -----')
+console.log('-------------------------------')
 
-console.log('----- rxjs-playground -----')
 
-range(1, 200).pipe(
-  filter(x => x % 2 === 1),
-  map(x => x + x)
-).subscribe(x => console.log(x));
+let test = "test123"
+console.log(test)
+
+
+console.log('-------------------------------')
+console.log('----- END rxjs-playground -----')
+console.log('-------------------------------')

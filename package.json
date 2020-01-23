@@ -4,12 +4,17 @@
   "description": "",
   "main": "js/app.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "tsc",
-    "watch": "tsc --w"
+    "start": "concurrently --kill-others \"npm run watch\" \"npm run serve\"",
+    "serve": "nodemon js/app.js",
+    "watch": "tsc --w",
+    "build": "tsc"
   },
   "author": "sebastiangolian <sebastiangolian@gmail.com>",
   "dependencies": {
     "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"  
   }
 }
