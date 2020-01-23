@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "tsc",
+    "watch": "tsc --w"
+  },
+  "author": "sebastiangolian <sebastiangolian@gmail.com>",
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  }
+}
