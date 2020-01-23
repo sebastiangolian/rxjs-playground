@@ -1,9 +1,13 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const device_1 = require("device");
 console.log('-------------------------------');
 console.log('----- RUN rxjs-playground -----');
 console.log('-------------------------------');
-let test = "test123";
-console.log(test);
+var cp = require('child_process');
+cp.fork('js/app-1');
+let device = new device_1.Device('device 1', 100);
+console.log(device.disp());
 console.log('-------------------------------');
 console.log('----- END rxjs-playground -----');
 console.log('-------------------------------');
