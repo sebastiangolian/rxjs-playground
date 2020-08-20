@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Device = void 0;
 class Device {
     constructor(name, price) {
         this.name = name;
